@@ -602,3 +602,29 @@ svg {
     transition: none !important;
   }
 }
+
+/* Current job spans the full row so the remaining cards stay paired */
+@media (min-width: 640px) {
+  .company.current {
+    grid-column: 1 / -1;
+  }
+}
+
+.company h4 .badge {
+  margin-left: 8px;
+  vertical-align: 2px;
+}
+
+.logo-monogram {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  background: var(--primary);
+  color: #fff;
+}
