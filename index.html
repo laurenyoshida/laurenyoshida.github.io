@@ -1,16 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lauren Yoshida</title>
+    <meta name="description" content="Lauren Yoshida builds products. Management Engineering grad from the University of Waterloo with experience at Plooto, Odaia, Ritual and The Weather Network." />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Website</title>
-      <script type="module" crossorigin src="/assets/index-kd7aJVGO.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-DsY44X01.css">
-    </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#top" class="nav-name">Lauren</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#now">Right Now</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#hobbies">Hobbies</a>
+        </div>
+      </nav>
+    </header>
 
-    <body>
-      <div id="root"></div>
-    </body>
-  </html>
-  
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1>Hi I'm Lauren!</h1>
+            <p class="lead">I love building products that shape the future and create meaningful change for people.</p>
+            <p class="muted">Even if that means trying to do the impossible - whether I fail or not, for me it's the learning and trying new things that matters most.</p>
+          </div>
+          <div class="hero-photo framed">
+            <img src="images/headshot.png" alt="Lauren's profile" width="320" height="320" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Now -->
+      <section id="now" class="section tinted">
+        <div class="container section-head">
+          <h2>Right Now</h2>
+          <p class="muted">I'm looking for an opportunity in a fast-paced environment where I can learn as much as possible. I thrive when given ownership and the freedom to drive meaningful results.</p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>My Experience</h2>
+            <p class="muted">Professional background and work history</p>
+          </div>
+          <h3 class="subhead">Companies I've Worked With</h3>
+          <div class="company-grid">
+            <article class="card company">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZ3BM48CL9rw9HlPuCudLPgaEjMnTEc-1DA&s" alt="Plooto logo" width="64" height="64" />
+              <div>
+                <h4>Plooto</h4>
+                <p>Leading Canadian fintech company revolutionizing B2B payments and cash flow management for small businesses.</p>
+              </div>
+            </article>
+            <article class="card company">
+              <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGJE-OMEKrPcw/company-logo_200_200/company-logo_200_200/0/1630619693093/odaiaintelligence_logo?e=2147483647&v=beta&t=KzfBWZlkSk5rp65w1naDMFhyZNIxIy5JuH_XzP7cx84" alt="Odaia logo" width="64" height="64" />
+              <div>
+                <h4>Odaia</h4>
+                <p>Innovative healthtech startup using AI to accelerate drug discovery and improve pharmaceutical R&amp;D outcomes.</p>
+              </div>
+            </article>
+            <article class="card company">
+              <img src="https://play-lh.googleusercontent.com/S7hg0EXaBAPwu_XSry4RDwmuWSkebFj0qoFIrjW0Qbh_3oKxItISej9jX29j8qbrmdI" alt="Ritual logo" width="64" height="64" />
+              <div>
+                <h4>Ritual</h4>
+                <p>Popular food ordering platform connecting hungry customers with local restaurants through seamless mobile experiences.</p>
+              </div>
+            </article>
+            <article class="card company">
+              <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEN-B_54mO3og/company-logo_200_200/company-logo_200_200/0/1630554570632/the_weather_network_logo?e=2147483647&v=beta&t=-5EY_qTOc9xtDAfhJOvu8OczWm-b0r3XpLNbKvjVxIg" alt="The Weather Network logo" width="64" height="64" />
+              <div>
+                <h4>The Weather Network</h4>
+                <p>Canada's most trusted weather source, delivering critical weather information and forecasts to millions of users daily.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section tinted">
+        <div class="container">
+          <div class="section-head">
+            <h2>Education</h2>
+            <p class="muted">Building the foundation for innovation and impact</p>
+          </div>
+          <article class="card school">
+            <div class="school-head">
+              <img src="https://uwaterloo.ca/brand/sites/ca.brand/files/styles/body-500px-wide/public/uploads/images/university-of-waterloo-vertical-logo.png?itok=9KCQdLsy" alt="University of Waterloo logo" width="80" height="80" />
+              <div>
+                <h4>University of Waterloo</h4>
+                <p class="muted">Management Engineering</p>
+                <span class="badge">Entrepreneurship Option</span>
+              </div>
+            </div>
+            <p class="muted">I graduated with a degree in Management Engineering, a unique program that combines engineering principles with business and management skills to solve complex problems at the intersection of technology and business.</p>
+            <p class="muted">Also completed an Entrepreneurship option—essentially an engineering version of a minor—focused on innovation, startup thinking, and bringing new ideas to life.</p>
+          </article>
+          <article class="card capstone">
+            <svg class="icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg>
+            <div>
+              <h4>Capstone Experience</h4>
+              <p class="muted">We created AWAIR, HVAC anomaly detection and predictive maintenance, helping identify system issues before becoming costly failures.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Hobbies -->
+      <section id="hobbies" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>What Else?</h2>
+            <p class="muted">My hobbies and interests outside of work</p>
+          </div>
+          <div class="hobbies-grid">
+            <div class="hobby-groups">
+              <div class="hobby-group">
+                <h3><span aria-hidden="true">⚽</span> Sports &amp; Fitness</h3>
+                <ul class="chips">
+                  <li>Frisbee</li><li>Soccer</li><li>Squash</li><li>Skiing</li><li>Curling</li><li>Running</li><li>Hiking</li>
+                </ul>
+              </div>
+              <div class="hobby-group">
+                <h3><span aria-hidden="true">🧩</span> Creative &amp; Mental</h3>
+                <ul class="chips">
+                  <li>Cooking</li><li>Solving Puzzles</li><li>Playing Poker</li>
+                </ul>
+              </div>
+              <div class="hobby-group">
+                <h3><span aria-hidden="true">✈️</span> Exploration</h3>
+                <ul class="chips">
+                  <li>Travelling</li><li>Trying New Experiences</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Photo carousel: add or remove <img> tags to change the photos -->
+            <div class="carousel-wrap framed">
+              <div class="carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Photos - use arrow keys or swipe to navigate">
+                <img src="images/frisbee-action.png" alt="Ultimate frisbee action shot" />
+                <img src="images/frisbee-team.png" alt="Ultimate frisbee team photo with teammates" />
+                <img src="images/friends-outdoors.png" alt="Friends group photo during outdoor adventure" />
+                <img src="images/hiking-snacks.png" alt="Hiking adventure with fun snacks and outdoor exploration" />
+                <img src="images/mountain-lake.png" alt="Mountain lake adventure and outdoor exploration" />
+                <div class="carousel-count" aria-live="polite"></div>
+                <div class="carousel-dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TL;DR -->
+      <section id="tldr" class="section tinted">
+        <div class="container">
+          <div class="section-head">
+            <h2>TL;DR</h2>
+            <p class="muted">The quick version</p>
+          </div>
+          <article class="card tldr">
+            <p><strong>Who:</strong> Management Engineering grad from University of Waterloo with an entrepreneurship option.</p>
+            <p><strong>What:</strong> Building products at companies like Plooto, Odaia, Ritual, and The Weather Network—working across B2B and B2C, from apps to websites to integrations.</p>
+            <p><strong>Why:</strong> To build the world I want to live in through tackling the impossible.</p>
+            <p><strong>When I'm not working:</strong> Playing frisbee, soccer, squash, skiing, curling, running, hiking, solving puzzles, cooking, traveling, and trying not to play too much poker.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <h3>Let's Connect</h3>
+        <p class="muted">Always open to a coffee chat, whether it's learning something, a new opportunity or just having a great conversation about the future.</p>
+        <div class="social">
+          <a href="mailto:laurenyshd@gmail.com" aria-label="Send email to Lauren">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/lauren-yoshida/" target="_blank" rel="noopener noreferrer" aria-label="View Lauren's LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/laurenyoshida" target="_blank" rel="noopener noreferrer" aria-label="View Lauren's GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg>
+            GitHub
+          </a>
+        </div>
+        <p class="copyright">© <span id="year">2026</span> Lauren Yoshida. Building the future, product by product.</p>
+      </div>
+    </footer>
+  </body>
+</html>
