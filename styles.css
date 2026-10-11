@@ -7,7 +7,9 @@
   --accent: #e9ebef;
   --border: #0000001a;
   --tint: rgb(236 236 240 / 0.3);
+  --tint-strong: rgb(236 236 240 / 0.5);
   --radius: 14px;
+  --radius-photo: 16px;
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --header-height: 69px;
 }
@@ -218,7 +220,7 @@ svg {
   position: absolute;
   inset: 0;
   z-index: -1;
-  border-radius: 16px;
+  border-radius: var(--radius-photo);
   background: linear-gradient(to bottom right, var(--accent), var(--muted));
   transform: translate(var(--frame-offset, 16px), var(--frame-offset, 16px));
 }
@@ -264,7 +266,7 @@ svg {
   aspect-ratio: 1;
   height: auto;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: var(--radius-photo);
   box-shadow: var(--shadow-lg);
 }
 
@@ -305,7 +307,7 @@ svg {
   height: 64px;
   object-fit: cover;
   border-radius: 8px;
-  background: rgb(236 236 240 / 0.5);
+  background: var(--tint-strong);
   transition: transform 0.3s;
 }
 
@@ -325,6 +327,18 @@ svg {
 
 .company:hover img {
   transform: scale(1.05);
+}
+
+/* Current job spans the full row so the remaining cards stay paired */
+@media (min-width: 640px) {
+  .company.current {
+    grid-column: 1 / -1;
+  }
+}
+
+.company h4 .badge {
+  margin-left: 8px;
+  vertical-align: 2px;
 }
 
 /* ---------- Education ---------- */
@@ -446,7 +460,7 @@ svg {
 .carousel {
   position: relative;
   height: 256px;
-  border-radius: 16px;
+  border-radius: var(--radius-photo);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   cursor: grab;
@@ -540,7 +554,7 @@ svg {
 .site-footer {
   padding: 48px 0;
   text-align: center;
-  background: rgb(236 236 240 / 0.5);
+  background: var(--tint-strong);
 }
 
 .site-footer h3 {
@@ -549,7 +563,7 @@ svg {
   margin-bottom: 16px;
 }
 
-.site-footer > .container > .muted {
+.footer-blurb {
   max-width: 448px;
   margin: 0 auto;
 }
@@ -601,16 +615,4 @@ svg {
   *::after {
     transition: none !important;
   }
-}
-
-/* Current job spans the full row so the remaining cards stay paired */
-@media (min-width: 640px) {
-  .company.current {
-    grid-column: 1 / -1;
-  }
-}
-
-.company h4 .badge {
-  margin-left: 8px;
-  vertical-align: 2px;
 }
